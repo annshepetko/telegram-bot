@@ -14,7 +14,6 @@ public class Config {
 
         var api = new TelegramBotsApi(DefaultBotSession.class);
         api.registerBot(bot);
-
         return api ;
     }
 
