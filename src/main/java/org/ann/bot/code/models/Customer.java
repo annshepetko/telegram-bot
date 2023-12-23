@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 
@@ -12,9 +13,9 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @AllArgsConstructor
+@Component
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
@@ -22,6 +23,5 @@ public class Customer {
     private String ticket_date;
     private  String phoneNumber;
 
-    @OneToMany(mappedBy = "customer")
-    private List<Ticket> tickets;
+
 }
