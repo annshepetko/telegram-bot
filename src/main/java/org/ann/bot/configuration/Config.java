@@ -1,6 +1,6 @@
 package org.ann.bot.configuration;
 
-import org.ann.bot.code.Bot;
+import org.ann.bot.Bot;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
